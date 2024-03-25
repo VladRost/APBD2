@@ -1,7 +1,19 @@
 namespace apbdcw2.Models;
-public class GasContainer : Container
+interface IHazardNotifier
 {
-    public GasContainer(double weight, double height, double emptyWeight, double depth, string containerType) : base(weight, height, emptyWeight, depth, containerType)
+    void NotifyDanger(string containerNumber);
+}
+public class GasContainer : Container
+
+{
+    public double Pressure{ get;set; }
+    public GasContainer(double height, double emptyWeight, double depth, string containerType) : base(height, emptyWeight, depth, containerType)
     {
+        Pressure = 23;
     }
+    public void Unload()
+    {
+        Weight = Weight*0.05;
+    }
+    
 }

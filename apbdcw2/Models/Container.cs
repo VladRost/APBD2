@@ -11,9 +11,9 @@ public class Container{
     public string SerNumber { get;set; }
     public string ContainerType { get;set; }
 
-    public Container(double weight, double height, double emptyWeight, double depth,string containerType)
+    public Container(double height, double emptyWeight, double depth,string containerType)
     {
-        Weight = weight;
+        Weight = 0;
         Height = height;
         EmptyWeight = emptyWeight;
         Depth = depth;
@@ -23,7 +23,7 @@ public class Container{
 
     public double MaxLoadCapacity()
     {
-        return EmptyWeight + Weight;
+        return EmptyWeight *3;
     }
     private string GenerateSerNumber()
     {
@@ -41,18 +41,18 @@ public class Container{
 
     public void Unload()
     {
-        Weight = ;
+        Weight = 0;
     }
 
     public void Load(double items,string name)
     {
-        if (items > MaxLoadCapacity())
+        if (items > MaxLoadCapacity()-Weight)
         {
             throw new OverfillException("Not enough space");
         }
         else
         {
-            Weight -= items;
+            Weight += items;
         }
     }
 }

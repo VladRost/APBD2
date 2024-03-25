@@ -1,4 +1,5 @@
 ﻿using apbdcw2.Exceptions;
+using apbdcw2.Models;
 
 class Program
 {
@@ -6,12 +7,16 @@ class Program
     {
         try
         {
-            LiquidContainer liquidContainer = new LiquidContainer(500, 5, 300, 10, "L");
-            liquidContainer.Load(500,"paliwo");
-
-            liquidContainer.Load(350,"asdfs"); 
+            // LiquidContainer liquidContainer = new LiquidContainer(5, 500, 10, "L");
+            // liquidContainer.Load(600,"paliwo");
+            // liquidContainer.Unload();
+            // Console.WriteLine(liquidContainer.EmptyWeight);
+            // Console.WriteLine(liquidContainer.Weight);
+            // liquidContainer.Load(1200,"mleko"); 
             
-            Console.WriteLine(liquidContainer.ContainerType+" "+liquidContainer.EmptyWeight);
+            // Console.WriteLine(liquidContainer.ContainerType+" "+liquidContainer.EmptyWeight);
+
+            GasContainer gasContainer = new GasContainer(10,200,5,"G");
         }
         catch (OverfillException ex)
         {

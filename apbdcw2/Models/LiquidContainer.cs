@@ -7,8 +7,8 @@ interface IHazardNotifier
 }
 class LiquidContainer : Container, IHazardNotifier
 {
-     public LiquidContainer(double weight, double height, double emptyWeight, double depth,string containerType)
-        : base(weight, height, emptyWeight, depth, containerType)
+     public LiquidContainer(double height, double emptyWeight, double depth,string containerType)
+        : base(height, emptyWeight, depth, containerType)
     {
     }
     public void NotifyDanger(string containerNumber)
@@ -17,16 +17,16 @@ class LiquidContainer : Container, IHazardNotifier
     }
     public void Load(double items,string name)
     {
-        if(name == "paliwo" && items > MaxLoadCapacity()*0.5){
+        if(name == "paliwo" && items > (MaxLoadCapacity()*0.5)-Weight){
             NotifyDanger(SerNumber);
         }
-        else if (items > MaxLoadCapacity()*0.9)
+        else if (items > (MaxLoadCapacity()*0.9)-Weight)
         {
             throw new OverfillException("Not enough space");
         }
         else
         {
-            Weight -= items;
+            Weight += items;
         }
     }
 
