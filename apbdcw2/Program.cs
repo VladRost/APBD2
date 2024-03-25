@@ -16,7 +16,13 @@ class Program
             
             // Console.WriteLine(liquidContainer.ContainerType+" "+liquidContainer.EmptyWeight);
 
-            GasContainer gasContainer = new GasContainer(10,200,5,"G");
+            // GasContainer gasContainer = new GasContainer(10,200,5,"G");
+            // gasContainer.Load(200,"gaz");
+            // gasContainer.Unload();
+            // Console.WriteLine(gasContainer.Weight);
+
+            // FridgeContainer fridgeContainer = new FridgeContainer(15,50,5,"F");
+            // fridgeContainer.Load(12,"ice cream",-40);
         }
         catch (OverfillException ex)
         {

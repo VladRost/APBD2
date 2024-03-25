@@ -15,5 +15,9 @@ public class GasContainer : Container
     {
         Weight = Weight*0.05;
     }
+    protected string GetTypeCont()
+    {
+        return "G";
+    }
     
 }
