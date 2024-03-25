@@ -1,0 +1,15 @@
+/home/sedepr0/Documents/APBD/APBD2/apbdcw2/bin/Debug/net8.0/apbdcw2
+/home/sedepr0/Documents/APBD/APBD2/apbdcw2/bin/Debug/net8.0/apbdcw2.deps.json
+/home/sedepr0/Documents/APBD/APBD2/apbdcw2/bin/Debug/net8.0/apbdcw2.runtimeconfig.json
+/home/sedepr0/Documents/APBD/APBD2/apbdcw2/bin/Debug/net8.0/apbdcw2.dll
+/home/sedepr0/Documents/APBD/APBD2/apbdcw2/bin/Debug/net8.0/apbdcw2.pdb
+/home/sedepr0/Documents/APBD/APBD2/apbdcw2/obj/Debug/net8.0/apbdcw2.GeneratedMSBuildEditorConfig.editorconfig
+/home/sedepr0/Documents/APBD/APBD2/apbdcw2/obj/Debug/net8.0/apbdcw2.AssemblyInfoInputs.cache
+/home/sedepr0/Documents/APBD/APBD2/apbdcw2/obj/Debug/net8.0/apbdcw2.AssemblyInfo.cs
+/home/sedepr0/Documents/APBD/APBD2/apbdcw2/obj/Debug/net8.0/apbdcw2.csproj.CoreCompileInputs.cache
+/home/sedepr0/Documents/APBD/APBD2/apbdcw2/obj/Debug/net8.0/apbdcw2.sourcelink.json
+/home/sedepr0/Documents/APBD/APBD2/apbdcw2/obj/Debug/net8.0/apbdcw2.dll
+/home/sedepr0/Documents/APBD/APBD2/apbdcw2/obj/Debug/net8.0/refint/apbdcw2.dll
+/home/sedepr0/Documents/APBD/APBD2/apbdcw2/obj/Debug/net8.0/apbdcw2.pdb
+/home/sedepr0/Documents/APBD/APBD2/apbdcw2/obj/Debug/net8.0/apbdcw2.genruntimeconfig.cache
+/home/sedepr0/Documents/APBD/APBD2/apbdcw2/obj/Debug/net8.0/ref/apbdcw2.dll
