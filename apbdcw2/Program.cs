@@ -7,10 +7,10 @@ class Program
         try
         {
             LiquidContainer liquidContainer = new LiquidContainer(500, 5, 300, 10, "L");
-            liquidContainer.Load(500);
+            liquidContainer.Load(500,"paliwo");
 
-            liquidContainer.Load(300); 
-            //liquidContainer.NotifyDanger(liquidContainer.SerNumber);
+            liquidContainer.Load(350,"asdfs"); 
+            
             Console.WriteLine(liquidContainer.ContainerType+" "+liquidContainer.EmptyWeight);
         }
         catch (OverfillException ex)

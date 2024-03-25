@@ -1,3 +1,4 @@
+using apbdcw2.Exceptions;
 using apbdcw2.Models;
 
 interface IHazardNotifier
@@ -12,7 +13,21 @@ class LiquidContainer : Container, IHazardNotifier
     }
     public void NotifyDanger(string containerNumber)
     {
-        Console.WriteLine($"Container {containerNumber} is in danger!");
+        Console.WriteLine($"Container {containerNumber} is in a danger!");
+    }
+    public void Load(double items,string name)
+    {
+        if(name == "paliwo" && items > MaxLoadCapacity()*0.5){
+            NotifyDanger(SerNumber);
+        }
+        else if (items > MaxLoadCapacity()*0.9)
+        {
+            throw new OverfillException("Not enough space");
+        }
+        else
+        {
+            Weight -= items;
+        }
     }
 
     protected string GetTypeCont()

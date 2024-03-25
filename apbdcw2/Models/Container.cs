@@ -4,7 +4,6 @@ namespace apbdcw2.Models;
 
 public class Container{
     private static HashSet<string> serNumbers = new HashSet<string>();
-
     public double Weight{ get;set; }
     public double Height { get;set; }
     public double EmptyWeight { get;set; }
@@ -42,10 +41,10 @@ public class Container{
 
     public void Unload()
     {
-        Weight = 0;
+        Weight = ;
     }
 
-    public void Load(double items)
+    public void Load(double items,string name)
     {
         if (items > MaxLoadCapacity())
         {
@@ -53,7 +52,7 @@ public class Container{
         }
         else
         {
-            Weight += items;
+            Weight -= items;
         }
     }
 }
