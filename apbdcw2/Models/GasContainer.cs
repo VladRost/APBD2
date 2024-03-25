@@ -3,5 +3,6 @@ public class GasContainer : Container
 {
     public GasContainer(string depth) : base(depth)
     {
+        
     }
 }
